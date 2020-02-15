@@ -1,0 +1,17 @@
+.delete-icon{
+    position:absolute;
+    right:0;
+    bottom:0.4rem;
+    opacity:0;
+    padding-right: 1rem;
+    cursor: pointer;
+   
+}
+.paper-div{
+    padding:0.5rem 1rem;
+    position: relative;
+}
+.paper-div:hover .delete-icon{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
