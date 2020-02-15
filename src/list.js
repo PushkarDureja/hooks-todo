@@ -3,7 +3,7 @@ import TextField from '@material-ui/core/TextField';
 
 import ListItem from "./listItem"
 
-export default function List({list,addItem,handleDelete}){
+export default function List({list,addItem,handleDelete,handleChangeClass}){
 const [item,setItem] = useState("");
 
 return(
@@ -20,7 +20,7 @@ return(
       fullWidth 
       /></form>
       {list.map(item=>{
-        return <ListItem item = {item} handleClick ={ ()=>handleDelete(item.id)} key = {item.id}/>
+        return <ListItem item = {item} handleClick ={ ()=>handleDelete(item.id)} key = {item.id} changeClass = {()=>handleChangeClass(item.id)}/>
       })}  
     </div>
 )

@@ -59,6 +59,14 @@ export default function HomePage(){
             newList
           )
         }}
+        handleChangeClass = {
+          (id)=>{
+          var newList = list.map(item=>{
+            return (item.id===id?{...item,completed:!item.completed}:item)
+          })
+          setList(newList)
+          }
+        }
         />
       </Paper>
       </Grid>

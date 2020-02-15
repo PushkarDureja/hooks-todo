@@ -10,8 +10,13 @@
 .paper-div{
     padding:0.5rem 1rem;
     position: relative;
+    user-select: none;
+    cursor: pointer;
 }
 .paper-div:hover .delete-icon{
     opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity,transform 0.4s,0.2s ease-in-out;
+}
+.delete-icon:hover{
+    transform: scale(1.2);
 }
